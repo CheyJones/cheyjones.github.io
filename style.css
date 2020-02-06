@@ -1,0 +1,105 @@
+/* Defaults */
+img {
+	display: none; /* images hidden until hover */
+	margin-left: auto;
+	margin-right: auto;
+}
+h1 {
+	font-family: optima;
+	font-size: 50pt;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+table {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th {
+	height: 100px;
+	width: 100px;
+	text-align: center;
+}
+
+td {
+	display: none;
+}
+
+body {
+	text-align: center;
+	margin: auto;
+	padding-top: 55px;
+}
+
+/* IDs */
+#main-table {
+	table-layout: fixed; 	/* even box spacing */
+	position: absolute;
+	font-family: optima;
+	font-size: 20pt;
+	color: black;
+	text-align: center;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+#title-start {
+	font-family: optima;
+	font-size: 45pt;
+	color: #c7c7c7;
+	opacity: 0.5;
+    text-shadow:
+    	-1px -1px 0 #000,
+    	1px -1px 0 #000,
+    	-1px 1px 0 #000,
+    	1px 1px 0 #000;
+    border-right: 1pt solid black;
+}
+
+#title-end {
+	font-family: optima;
+	font-size: 20pt;
+	color: white;
+	opacity: 0.4;
+	text-shadow:
+    	-1px -1px 0 #000,
+    	1px -1px 0 #000,
+    	-1px 1px 0 #000,
+    	1px 1px 0 #000;
+}
+
+/* Classes */
+.template-type {
+	position: relative;
+	font-family: optima;
+	font-size: 20pt;
+	border: 5px solid black;
+	border-radius: 8px;
+	height:200px;
+	width: 50px;
+}
+
+/* Animations */
+.template-type:hover{
+	background-color: #efefef;
+	/* show related image */
+}
+
+/* Hover colors */
+#about-me:hover{
+	background-color: #ff3730;
+}
+
+#chemistry:hover{
+	background-color: #1eff92;
+}
+
+#analytics:hover{
+	background-color: #8447ff;
+}
+
+#publications:hover{
+	background-color: #1e8bff;
+}
