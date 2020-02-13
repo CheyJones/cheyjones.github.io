@@ -1,9 +1,25 @@
 /* Defaults */
-img {
-	display: none; /* images hidden until hover */
-	margin-left: auto;
-	margin-right: auto;
+a {
+	text-decoration: none; /* remove underline from links */
 }
+
+a:link,a:visited {
+	color:black;
+}
+
+body {
+	text-align: center;
+	margin: auto;
+	padding-top: 55px;
+}
+
+img {
+	/*display: none; images hidden until hover */
+	margin-left: 15px;
+	margin-right: 15px;
+	border: 3px dashed black;
+}
+
 h1 {
 	font-family: optima;
 	font-size: 50pt;
@@ -18,8 +34,8 @@ table {
 }
 
 th {
-	height: 100px;
-	width: 100px;
+	height: 25%;
+	width: 25%;
 	text-align: center;
 }
 
@@ -27,25 +43,19 @@ td {
 	display: none;
 }
 
-body {
-	text-align: center;
-	margin: auto;
-	padding-top: 55px;
-}
-
 /* IDs */
-#main-table {
+#index-table {
 	table-layout: fixed; 	/* even box spacing */
 	position: absolute;
 	font-family: optima;
 	font-size: 20pt;
 	color: black;
-	text-align: center;
+	text-align: center; 
 	padding-left: 70px;
 	padding-right: 70px;
 }
 
-#title-start {
+#title-name {
 	font-family: optima;
 	font-size: 45pt;
 	color: #c7c7c7;
@@ -58,20 +68,23 @@ body {
     border-right: 1pt solid black;
 }
 
-#title-end {
+#title-blurb {
 	font-family: optima;
 	font-size: 20pt;
-	color: white;
+	color: #b01919;
 	opacity: 0.4;
-	text-shadow:
-    	-1px -1px 0 #000,
-    	1px -1px 0 #000,
-    	-1px 1px 0 #000,
-    	1px 1px 0 #000;
 }
 
 /* Classes */
-.template-type {
+.body-text {
+	font-family: optima;
+	font-size: 14pt;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: justify;
+}
+
+.index-section {
 	position: relative;
 	font-family: optima;
 	font-size: 20pt;
@@ -81,25 +94,53 @@ body {
 	width: 50px;
 }
 
+.navigation {
+	font-family: optima;
+	font-size: 25pt;
+	opacity: 0.5;
+	padding: 3px 15px;
+}
+
 /* Animations */
-.template-type:hover{
-	background-color: #efefef;
-	/* show related image */
+
+
+/* Tab colors */
+#about-me-home:visited,#chemistry-home:visited,#analytics-home:visited,#publications:visited {
+	color:black;
 }
 
-/* Hover colors */
-#about-me:hover{
-	background-color: #ff3730;
+#about-me-home:hover{
+	background-color: #b01919; /*ff3730*/
 }
 
-#chemistry:hover{
-	background-color: #1eff92;
+#chemistry-home:hover{
+	background-color: #cc5500; 
 }
 
-#analytics:hover{
-	background-color: #8447ff;
+#analytics-home:hover{
+	background-color: #037887;
 }
 
-#publications:hover{
-	background-color: #1e8bff;
+#publications-home:hover{
+	background-color: #1d81eb;
+}
+
+#index-nav:active,#index-nav:hover,#index-nav:link,#index-nav:visted{
+	color: black;
+}
+
+#about-me-nav:active,#about-me-nav:hover,#about-me-nav:link,#about-me-nav:visited{
+	color: #b01919;
+}
+
+#chemistry-nav:active,#chemistry-nav:hover,#chemistry-nav:link,#chemistry-nav:visited{
+	color: #cc5500;
+}
+
+#analytics-nav:active,#analytics-nav:hover,#analytics-nav:link,#analytics-nav:visited{
+	color: #037887;
+}
+
+#publications-nav:active,#publications-nav:hover,#publications-nav:link,#publications-nav:visited{
+	color: #1d81eb;
 }
